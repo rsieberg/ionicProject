@@ -38,7 +38,7 @@ angular.module('todo', ['ionic','firebase'])
   $scope.user = {};
   // Load or initialize projects
   $scope.projectsList = $firebase(new Firebase("https://rsieberg.firebaseio.com/projects"));
-  $scope.user = $firebase(new Firebase("https://rsieberg.firebaseio.com/Users/Rene"));
+  $scope.user = $firebase(new Firebase("https://rsieberg.firebaseio.com/Users/John"));
 
   $scope.projectsList.$on("loaded", function() {
       console.log($scope.projectsList);
